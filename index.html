@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Black, White, Red Themed Responsive Website with Collapsible Nav Bar and Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <span class="navbar-toggle" id="js-navbar-toggle">
+      <i class="fas fa-bars"></i>
+    </span>
+    <a href="#" class="logo">My Website</a>
+    <ul class="main-nav" id="js-menu">
+      <li>
+        <a href="#" class="nav-links">Home</a>
+      </li>
+      <li>
+        <a href="#" class="nav-links">About Us</a>
+      </li>
+      <li>
+        <a href="#" class="nav-links">Services</a>
+      </li>
+      <li>
+        <a href="#" class="nav-links">Contact Us</a>
+      </li>
+      <li>
+        <a href="#" class="nav-links">Login</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Login Form -->
+  <div class="form-popup" id="myForm">
+    <form class="form-container" onsubmit="return validateForm()">
+      <h1>Login</h1>
+      <label for="username"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" required>
+
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required>
+
+      <button type="submit" class="btn">Login</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <h1>Welcome to my website!</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet urna at nibh mollis sagittis. Nullam faucibus dolor ut massa ullamcorper, sit amet finibus risus aliquet. Integer ultricies viverra sapien, id hendrerit tellus eleifend eu. Nam gravida augue id nisl congue, ac sollicitudin leo facilisis. Fusce consequat malesuada turpis sit amet vestibulum. Donec accumsan varius.</p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 My Website. All rights reserved.</p>
+  </footer>
+  
+</body>
+</html>
